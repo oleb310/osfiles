@@ -113,3 +113,11 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#555555'
 
 # fetch system info
 fm6000 -r | lolcat
+
+# Node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Path
+export PATH=$PATH:/opt/v

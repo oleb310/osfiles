@@ -7,6 +7,7 @@ call plug#begin()
     Plug 'jiangmiao/auto-pairs'
     Plug 'xiyaowong/nvim-transparent'
     Plug 'sainnhe/sonokai'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 colorscheme sonokai

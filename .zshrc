@@ -106,7 +106,7 @@ alias pru='sudo pacman -Rns $(sudo pacman -Qdtq)'
 # Keybindings
 set -o vi
 bindkey '^@' autosuggest-accept
-bindkey '^K' backward-kill-line
+bindkey '^Z' backward-kill-line
 
 # Colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#555555'

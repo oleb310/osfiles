@@ -109,12 +109,15 @@ bindkey '^@' autosuggest-accept
 bindkey '^Z' backward-kill-line
 bindkey '^N' up-line-or-history
 bindkey '^P' down-line-or-history
+bindkey -s '^U' 'clear^M'  
 
 # Colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#555555'
 
-# fetch system info
-fm6000 -r | lolcat
+# Fetch system info
+# fm6000 -r | lolcat
+# pfetch
+# neofetch | lolcat
 
 # Node version manager
 export NVM_DIR="$HOME/.nvm"

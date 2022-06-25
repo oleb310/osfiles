@@ -2,11 +2,12 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
-ZSH_THEME='310'
+ZSH_THEME='gentoo'
 
 # Plugins
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
+# use oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
@@ -20,6 +21,7 @@ bindkey '^@' autosuggest-accept
 bindkey '^K' backward-kill-line
 bindkey '^N' up-line-or-history
 bindkey '^P' down-line-or-history
+bindkey '^C' interupt 
 
 # Colors
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#555555'

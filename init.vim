@@ -1,27 +1,28 @@
 " basic settings
 set number
-set mouse=a
 set laststatus=0
 set softtabstop=4
 set shiftwidth=4
+set relativenumber
 set cursorline
 set termguicolors
+set expandtab
 
 " plugins
 call plug#begin()
-    Plug 'vim-airline/vim-airline'
-    Plug 'preservim/nerdtree'
     Plug 'rafi/awesome-vim-colorschemes'
     Plug 'jiangmiao/auto-pairs'
     Plug 'ryanoasis/vim-devicons'
     Plug 'neoclide/coc.nvim'
+    Plug 'xiyaowong/nvim-transparent'
+    Plug 'lukas-reineke/indent-blankline.nvim'
 call plug#end()
 
 " theme
-colorscheme onedark
+colorscheme OceanicNext
 
-" airline theme
-"let g:airline_theme='simple'
+" disable first indent level
+"let g:indent_blankline_show_first_indent_level = v:false
 
-" keybindings
-nnoremap <C-n> :NERDTreeToggle <CR>
+" transparency
+let g:transparent_enabled = v:true

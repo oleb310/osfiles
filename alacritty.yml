@@ -1,0 +1,48 @@
+window:
+    opacity: 1.0
+
+mouse:
+  hide_when_typing: true
+
+shell:
+    program: /usr/bin/zsh
+
+font:
+    normal:
+        family: FantasqueSansMono Nerd Font Mono
+        style: Regular
+    bold:
+        family: FantasqueSansMono Nerd Font Mono
+        style: Bold
+    italic:
+        family: FantasqueSansMono Nerd Font Mono
+        style: Italic
+    size: 14.0
+
+env:
+    WINIT_X11_SCALE_FACTOR: "1.0"
+
+colors:
+    primary:
+        background: '0x000000'
+        foreground: '0xffffff'
+    cursor:
+        cursor: '0xffffff'
+    normal:
+        black: '0x121211'
+        red: '0xd41919'
+        green: '0x5eeeab'
+        yellow: '0xfea44c'
+        blue: '0x277fff'
+        magenta: '0xbf2e5d'
+        cyan: '0x49aee6'
+        white: '0xe6e6e6'
+    bright:
+        black: '0x121211'
+        red: '0xd41919'
+        green: '0x5eeeab'
+        yellow: '0xfea44c'
+        blue: '0x277fff'
+        magenta: '0xbf2e5d'
+        cyan: '0x49aee6'
+        white: '0xe6e6e6'

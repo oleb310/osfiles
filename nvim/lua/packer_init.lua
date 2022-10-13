@@ -1,4 +1,5 @@
--- plugin manager (packer.nvim)
+-- plugin manager configuration (packer.nvim)
+
 local status_ok, packer = pcall(require, 'packer')
 if not status_ok then
   return
@@ -7,6 +8,7 @@ end
 return packer.startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'navarasu/onedark.nvim'
+    use 'ellisonleao/gruvbox.nvim'
     use {
         'windwp/nvim-autopairs',
         config = function()
@@ -19,4 +21,5 @@ return packer.startup(function(use)
             require('nvim-treesitter.install').update({ with_sync = true })
         end
     }
+    use {'neoclide/coc.nvim', branch = 'release'}
 end)

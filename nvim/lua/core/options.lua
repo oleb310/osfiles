@@ -1,4 +1,5 @@
 -- basic settings and configuration
+
 local opt = vim.opt
 
 opt.clipboard = 'unnamedplus'

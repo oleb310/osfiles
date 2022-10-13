@@ -1,8 +1,6 @@
---
 -- init.lua
---
 
 require('packer_init')
 require('core/options')
-require('core/colors')
+require('plugins/colorschemes')
 require('plugins/nvim-treesitter')

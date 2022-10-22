@@ -8,7 +8,6 @@ picom &
 polybar &
 sxhkd &
 
-
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 bspc monitor HDMI1 -d α β γ δ ε ζ η θ ι κ

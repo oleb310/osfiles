@@ -10,6 +10,10 @@ super + shift + Return
 super + Return
 	rofi -show run
 
+# file manager
+super + e
+        pcmanfm
+
 # web browser
 super + b
         firefox

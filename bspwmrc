@@ -6,12 +6,12 @@ xsetroot -cursor_name left_ptr &
 nitrogen --restore &
 picom &
 polybar &
+sxhkd &
 
-pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
-bspc monitor HDMI1 -d α β γ δ ε ζ η
+bspc monitor HDMI1 -d α β γ δ ε ζ η θ ι κ
 bspc monitor eDP1
 bspc config border_width 2
 bspc config window_gap 12

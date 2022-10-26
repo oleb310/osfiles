@@ -1,6 +1,15 @@
 # Modkey
 set $mod Mod4
 
+# set keyboard layout
+exec --no-startup-id setxkbmap -layout de &
+
+# set monitor(s)
+exec --no-startup-id xrandr --output eDP-1 --off --output HDMI-1 --primary --mode 2560x1440 --pos 0x0 --rotate normal &
+
+# mouse cursor
+exec --no-startup-id xsetroot -cursor_name left_ptr &
+
 # compositor
 exec --no-startup-id picom &
 
@@ -12,12 +21,12 @@ exec --no-startup-id polybar &
 
 # gaps
 for_window [class="^.*"] border pixel 2
-gaps inner 12
-gaps outer 12
+gaps inner 16
+gaps outer 4
 
 # border colors
-client.focused #277fff #277fff #277fff #277fff #277fff
-client.unfocused #000000 #000000 #000000 #000000 #000000
+client.focused #06a284 #06a284 #06a284 #06a284 #06a284
+client.unfocused #191d22 #191d22 #191d22 #191d22 #191d22
 
 # Font for Bar and Titles
 font pango:monospace 8
@@ -26,7 +35,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+shift+Return exec alacritty
+bindsym $mod+shift+Return exec --no-startup-id alacritty
 
 # start a webbrowser
 bindsym $mod+b exec brave
@@ -138,10 +147,10 @@ bindsym $mod+Shift+r restart
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
-        bindsym l resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym h resize grow width 10 px or 10 ppt
+        bindsym l resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym h resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt

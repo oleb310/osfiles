@@ -1,0 +1,14 @@
+{
+	"ignored_packages":
+	[
+	],
+	"color_scheme": "gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
+	"theme": "Adaptive.sublime-theme",
+	"font_face": "JetBrainsMono Nerd Font Mono",
+	"font_size": 12,
+	"shift_tab_unindent": true,
+	"translate_tabs_to_spaces": true,
+	"vintage_use_clipboard": true,
+	"overlay_scroll_bars": "enabled",
+	"mini_diff": false,
+}

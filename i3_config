@@ -1,4 +1,4 @@
-# Modkey
+# modkey
 set $mod Mod4
 
 # set keyboard layout
@@ -7,8 +7,7 @@ exec --no-startup-id setxkbmap -layout de &
 # set monitor(s)
 exec --no-startup-id xrandr --output eDP-1 --off --output HDMI-1 --primary --mode 2560x1440 --pos 0x0 --rotate normal &
 
-# mouse cursor
-exec --no-startup-id xsetroot -cursor_name left_ptr &
+# mouse cursor exec --no-startup-id xsetroot -cursor_name left_ptr &
 
 # compositor
 exec --no-startup-id picom &
@@ -16,17 +15,18 @@ exec --no-startup-id picom &
 # wallpaper
 exec --no-startup-id nitrogen --restore &
 
-# bar
-exec --no-startup-id polybar &
-
-# gaps
-for_window [class="^.*"] border pixel 2
-gaps inner 16
-gaps outer 4
-
-# border colors
-client.focused #06a284 #06a284 #06a284 #06a284 #06a284
-client.unfocused #191d22 #191d22 #191d22 #191d22 #191d22
+# borders and gaps
+set $gap_width 0
+gaps inner $gap_width
+gaps outer $gap_width
+default_border pixel 1
+default_floating_border pixel 1
+hide_edge_borders both
+set $border_color #426958
+client.focused $border_color $border_color $border_color $border_color $border_color
+client.unfocused $border_color $border_color $border_color $border_color $border_color
+client.focused_inactive $border_color $border_color $border_color $border_color $border_color
+bindsym $mod+Control+Return exec --no-startup-id killall polybar &; exec --no-startup-id i3-msg gaps inner current set $gap_width &; exec --no-startup-id i3-msg gaps outer current set $gap_width &
 
 # Font for Bar and Titles
 font pango:monospace 8
@@ -141,27 +141,15 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-        bindsym l resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym h resize grow width 5 px or 5 ppt
+# resize windows
+bindsym $mod+Control+l resize shrink width 5 px or 5 ppt
+bindsym $mod+Control+j resize grow height 5 px or 5 ppt
+bindsym $mod+Control+k resize shrink height 5 px or 5 ppt
+bindsym $mod+Control+h resize grow width 5 px or 5 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-
-bindsym $mod+r mode "resize"
+# start on workspace 1
+exec --no-startup-id i3-msg 'workspace 1'

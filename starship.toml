@@ -1,0 +1,23 @@
+format = """
+$python$directory$git_branch$character
+"""
+
+add_newline = false
+
+[python]
+symbol = ""
+format = '[(\($virtualenv\) ${symbol} )](yellow)'
+
+[directory]
+truncation_length = 5
+truncate_to_repo = false
+format = "[$path](bold cyan) "
+
+[git_branch]
+symbol = ""
+format = "[$symbol $branch](purple) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vicmd_symbol = "[❮](bold blue)"

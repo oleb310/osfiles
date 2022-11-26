@@ -6,41 +6,87 @@ mouse:
 
 font:
   normal:
-      family: JetBrainsMono Nerd Font Mono
-      style: Regular
+    family: FantasqueSansMono Nerd Font Mono
+    style: Regular
   bold:
-      family: JetBrainsMono Nerd Font Mono
-      style: Bold
+    family: FantasqueSansMono Nerd Font Mono
+    style: Bold
   italic:
-      family: JetBrainsMono Nerd Font Mono
-      style: Italic
-  size: 12.0
+    family: FantasqueSansMono Nerd Font Mono
+    style: Italic
+  size: 13.0
 
 env:
   WINIT_X11_SCALE_FACTOR: "1.0"
 
 shell:
-  program: /usr/bin/zsh
+  program: /usr/bin/fish
 
 colors:
   primary:
-      background: '0x171a1c'
-      foreground: '0xe1dcbe'
+    #background: '#1D2021'
+    background: '#111213'
+    foreground: '#EBDBB2'
   normal:
-      black:   '0x212121'
-      red:     '0xfb4934'
-      green:   '0x1cbd6a'
-      yellow:  '0xfabd2f'
-      blue:    '0x3780c4'
-      magenta: '0x9659bd'
-      cyan:    '0x50b5b2'
-      white:   '0xe1dcbe'
-  bright:
-      black:   '0x303536'
-      red:     '0xff7566'
-      green:   '0x63e09f'
-      yellow:  '0xfad170'
-      blue:    '0x63a1db'
-      magenta: '0xa495f0'
-      cyan:    '0x82cfcc'
-      white:   '0xfcf9e6'
+    black: '#1D2021'
+    red: '#FB4934'
+    green: '#B8BB26'
+    yellow: '#FABD2F'
+    blue: '#83A598'
+    magenta: '#D3869B'
+    cyan: '#8EC07C'
+    white: '#EBDBB2'
+
+
+#colors:
+  #primary:
+    #background: '#191a21'
+    #foreground: '#f8f8f2'
+    #bright_foreground: '#ffffff'
+  #cursor:
+    #text: CellBackground
+    #cursor: CellForeground
+  #vi_mode_cursor:
+    #text: CellBackground
+    #cursor: CellForeground
+  #search:
+    #matches:
+      #foreground: '#44475a'
+      #background: '#50fa7b'
+    #focused_match:
+      #foreground: '#44475a'
+      #background: '#ffb86c'
+  #footer_bar:
+    #background: '#282a36'
+    #foreground: '#f8f8f2'
+  #hints:
+    #start:
+      #foreground: '#282a36'
+      #background: '#f1fa8c'
+    #end:
+      #foreground: '#f1fa8c'
+      #background: '#282a36'
+  #line_indicator:
+    #foreground: None
+    #background: None
+  #selection:
+    #text: CellForeground
+    #background: '#44475a'
+  #normal:
+    #black: '#21222c'
+    #red: '#ff5555'
+    #green: '#50fa7b'
+    #yellow: '#f1fa8c'
+    #blue: '#bd93f9'
+    #magenta: '#ff79c6'
+    #cyan: '#8be9fd'
+    #white: '#f8f8f2'
+  #bright:
+    #black: '#6272a4'
+    #red: '#ff6e6e'
+    #green: '#69ff94'
+    #yellow: '#ffffa5'
+    #blue: '#d6acff'
+    #magenta: '#ff92df'
+    #cyan: '#a4ffff'
+    #white: '#ffffff'

@@ -1,23 +1,27 @@
 format = """
-$python$directory$git_branch$character
+$pytohn$directory$git_branch$character
 """
 
 add_newline = false
 
 [python]
-symbol = ""
-format = '[(\($virtualenv\) ${symbol} )](yellow)'
+format = '[(\($virtualenv\) )](bold yellow)'
+
+[username]
+show_always = true
+format = "[$user](bold red)"
+
+[hostname]
+ssh_only = false
+format = "[@$hostname](blue)"
 
 [directory]
-truncation_length = 5
-truncate_to_repo = false
-format = "[$path](bold cyan) "
+format = "[$path](bold blue) "
 
 [git_branch]
-symbol = ""
-format = "[$symbol $branch](purple) "
+format = '[\($branch\)](purple) '
 
 [character]
-success_symbol = "[❯](bold green)"
-error_symbol = "[❯](bold red)"
-vicmd_symbol = "[❮](bold blue)"
+success_symbol = "[❯](bold cyan)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](blue)"

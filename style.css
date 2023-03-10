@@ -1,0 +1,97 @@
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: #272A34;
+    color: #FFFFFF;
+}
+
+#workspaces button:hover {
+    background-color: #5EBDAB;
+    background: #5EBDAB;
+    color: #000000;
+}
+
+#workspaces button label {
+    font-size: 20px;
+}
+
+#workspaces button {
+    background-color: #FEA44C;
+    color: #000000;
+    border-radius: 6px;
+    margin: 0 4px;
+    padding: 0 12px;
+}
+
+#workspaces button.focused {
+    background-color: #277FFF;
+}
+
+#workspaces button.urgent {
+    background-color: #EC0101;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio {
+    padding: 0 10px;
+    margin: 0 2px;
+    color: #FFFFFF;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    color: #5EBDAB;
+    font-size: 16px;
+}
+
+#battery {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 6px;
+}
+
+#battery.charging, #battery.plugged {
+    color: #000000;
+    background-color: #47D4B9;
+    border-color: #FFFFFF;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #EC0101;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+#network {
+    background-color: #49AEE6;
+    color: #000000;
+    border-radius: 6px;
+}
+
+#network.disconnected {
+    background-color: #D41919;
+    color: #FFFFFF;
+}
+
+#pulseaudio {
+    background-color: #a95ee6;
+    border-radius: 6px;
+    color: #000000;
+}
+
+#pulseaudio.muted {
+    background-color: #a95ee6;
+    color: #000000;
+}
